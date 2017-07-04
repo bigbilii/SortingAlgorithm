@@ -6,7 +6,6 @@ public class BubbleSort extends List {
 
     @Override
     public void sort() {
-        //冒泡排序
         for (int i = 0; i < list.length - 1; i++) {
             for (int j = 0; j < list.length - i - 1; j++) {
                 if(list[j] > list[j + 1]) {
