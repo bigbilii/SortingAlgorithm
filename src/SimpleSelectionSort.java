@@ -1,6 +1,6 @@
 /**
  * Created by bigbilii on 2017/7/4.
- * 简单插入排序
+ * 简单选择排序
  */
 public class SimpleSelectionSort extends List{
 
