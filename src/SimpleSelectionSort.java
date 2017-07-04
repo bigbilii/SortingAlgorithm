@@ -17,7 +17,7 @@ public class SimpleSelectionSort extends List{
     }
 
 
-    private int findMin(int start, int end) { //找到最小值 返回坐标
+    private int findMin(int start, int end) { //找到最小值
         int min = list[start];
         int index = start;
         for (int i = start + 1; i < end; i++) {
@@ -26,6 +26,6 @@ public class SimpleSelectionSort extends List{
                 index = i;
             }
         }
-        return index;
+        return index; //返回坐标
     }
 }
