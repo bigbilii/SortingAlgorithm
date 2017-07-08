@@ -6,7 +6,7 @@ import java.util.Random;
  */
 public class List {
 
-    int[] list = new int[20];
+    int[] list = new int[8];
 
     List() {
         randList();

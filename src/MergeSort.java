@@ -6,7 +6,23 @@ public class MergeSort extends List {
 
     @Override
     public void sort() {
+        for (int i = 1; i < list.length; i *= 2) {
+            Msort(i);
+            System.out.print(i + ": ");
+            printList();
+        }
+    }
 
+    private void Msort(int gap) {
+        int i = 0;
+
+        for (i = 0; i + 2 * gap - 1 < list.length; i += 2 * gap) {
+            merge(i,i + gap - 1, i + 2 * gap - 1);
+        }
+
+        if (i + gap - 1 < list.length) {
+            merge(i, i + gap - 1, list.length - 1);
+        }
     }
 
     private void merge(int low, int mid, int high) { //合并两个序列
@@ -33,7 +49,7 @@ public class MergeSort extends List {
         }
 
         p3 = 0;
-        for (int i = low; i < high; i++) {
+        for (int i = low; i <= high; i++) {
             list[i] = array[p3++];
         }
     }
